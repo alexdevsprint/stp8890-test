@@ -1,0 +1,154 @@
+header {
+  background-color: $_header_color;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  z-index: 900;
+  will-change: transform;
+}
+
+[header-container] {
+  @include container;
+}
+
+[data-menu] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // @include media(desktop) {
+  //   justify-content: center;
+  // }
+}
+
+@include media(desktop) {
+  [data-logo-img] {
+    width: 60px;
+    height: 60px;
+    margin-right: 53px;
+  }
+}
+
+[data-nav-list] {
+  background-color: $_header_color;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-top: 80px;
+  padding-left: 52px;
+  padding-right: 92px;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.3s;
+  z-index: 1000;
+
+  @include media(desktop) {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18.5px 0;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+}
+
+[data-menu='true'] .nav-list {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover,
+[data-burger]:hover {
+  color: $_link_hover_color;
+}
+
+.nav-link:active,
+[data-burger]:active {
+  color: $_link_active_color;
+}
+
+// .nav-link:hover,
+// .nav-link:focus {
+//   color: $_header_accent_color;
+// }
+
+// .burger-btn,
+// .btn-close {
+//   padding: 0.5em 0.8em;
+//   font-size: 1rem;
+//   background-color: blueviolet;
+//   border: none;
+//   border-radius: 0.5em;
+//   color: #fff;
+// }
+
+[data-burger] {
+  color: $_main_color;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.burger-btn.rotate {
+  transform: rotate(180deg);
+}
+
+.icon {
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.icon-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-open .icon-menu {
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-open .icon-close {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+[data-menu='false'] [data-nav-list] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+[data-menu='true'] [data-nav-list] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+}
