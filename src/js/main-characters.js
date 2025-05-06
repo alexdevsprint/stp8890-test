@@ -3,31 +3,34 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
+
+const base = window.location.hostname === 'localhost' ? '' : '/stp8890-test';
+
 const data = [
   {
     name: 'MOO',
-    avatarMob: '/img/main-characters/main-characters-moo-mob.png',
-    avatarDesk: '/img/main-characters/main-characters-moo-desk.png',
+    avatarMob: '${base}/img/main-characters/main-characters-moo-mob.png',
+    avatarDesk: '${base}/img/main-characters/main-characters-moo-desk.png',
     description:
       'A clever guardian with control over elemental magic. He uses spells to slow and confuse enemies.',
   },
   {
     name: 'LULU',
-    avatarMob: '/img/main-characters/main-characters-lulu-mob.png',
-    avatarDesk: '/img/main-characters/main-characters-lulu-desk.png',
+    avatarMob: '${base}/img/main-characters/main-characters-lulu-mob.png',
+    avatarDesk: '${base}/img/main-characters/main-characters-lulu-desk.png',
     description:
       'Agile and fierce, Lulu’s tower upgrades pack a punch — she leads the charge with precision and power.',
   },
   {
     name: 'ELDER BRAMBLE',
-    avatarMob: '/img/main-characters/main-characters-bramble-mob.png',
-    avatarDesk: '/img/main-characters/main-characters-bramble-desk.png',
+    avatarMob: '${base}/img/main-characters/main-characters-bramble-mob.png',
+    avatarDesk: '${base}/img/main-characters/main-characters-bramble-desk.png',
     description: 'Mysterious druid who provides upgrades and guidance.',
   },
   {
     name: 'THE FOGLINGS',
-    avatarMob: '/img/main-characters/main-characters-foglings-mob.png',
-    avatarDesk: '/img/main-characters/main-characters-foglings-desk.png',
+    avatarMob: '${base}/img/main-characters/main-characters-foglings-mob.png',
+    avatarDesk: '${base}/img/main-characters/main-characters-foglings-desk.png',
     description:
       'Mischievous but harmless spirits that help collect offline rewards.',
   },
