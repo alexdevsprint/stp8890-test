@@ -1,11 +1,4 @@
-
-
-
 .main-characters-section {
-  // padding-top: 66px;
-  // background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
-  // background-position: center top;
-  // background-repeat: no-repeat;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -21,8 +14,6 @@
   background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
   background-position: center top;
   background-repeat: no-repeat;
-  //old flash
-  // background-position: -90px -110px;
 
   background-position: -60px -40px;
   background-size: 900px;
@@ -95,8 +86,8 @@
   margin-bottom: 69px;
 }
 .main-characters-slider-img {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
   width: 145px;
 }
@@ -124,15 +115,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
-
   .main-characters-section {
     margin: 0 auto;
-    
-    // padding-top: 215px;
-    // background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
-    // background-position: center top;
-    // background-repeat: no-repeat;
   }
 
   .main-characters-container {
@@ -148,8 +132,8 @@
     background-repeat: no-repeat;
 
     background-position: -113px 50px;
-  background-size: auto;
-  padding-top: 202px;
+    background-size: auto;
+    padding-top: 202px;
   }
 
   .main-characters-title {
