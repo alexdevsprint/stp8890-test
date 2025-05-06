@@ -21,8 +21,11 @@
   background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
   background-position: center top;
   background-repeat: no-repeat;
-  background-position: -90px -110px;
-  background-size: 1000px;
+  //old flash
+  // background-position: -90px -110px;
+
+  background-position: -60px -40px;
+  background-size: 900px;
   padding-top: 65px;
 }
 
@@ -143,10 +146,14 @@
     background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
     background-position: center top;
     background-repeat: no-repeat;
+
+    background-position: -113px 50px;
+  background-size: auto;
+  padding-top: 202px;
   }
 
   .main-characters-title {
-    margin-bottom: 280px;
+    margin-bottom: 191px;
     font-weight: 400;
     font-size: 50px;
     line-height: 0.44;
@@ -154,7 +161,7 @@
 
   .main-characters-img {
     position: absolute;
-    top: -110px;
+    top: 90px;
     right: 10px;
     width: 97px;
     height: 105px;
