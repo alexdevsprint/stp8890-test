@@ -2,36 +2,77 @@
   padding-top: 0;
   padding-bottom: 0;
 
-  background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
+  // background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  // background-position: -60px -47px;
+  //  background-size: auto 250px;
+  //  z-index: 1;
 
+
+
+   position: relative;
+   
+}
+//Mob
+.main-characters-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png') ;
+  background-position: center top;
+  background-repeat: no-repeat;  
+  // width: 100vw;
+  // background-position: calc(100% + 100px) top;
   background-position: -60px -47px;
    background-size: auto 250px;
+  // opacity: 0.5; /* если нужен полупрозрачный фон */
+  // z-index: -1; /* помещаем фон под содержимое блока */
 }
+
 @media only screen and (min-width: 655px) {
-  .main-characters-section {
-    background-image: none;
+  .main-characters-section::before {
+    content: none;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main-characters-section {
-background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
-background-position: center top;
-background-repeat: no-repeat;
 
-background-position: -113px 50px;
-background-size: auto;
+// background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
+// background-position: center top;
+// background-repeat: no-repeat;
+
+// background-position: -113px 50px;
+// background-size: auto;
+  }
+
+//Desk
+  .main-characters-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png') ;
+    background-position: center top;
+    background-repeat: no-repeat;  
+    // width: 100vw;
+    // background-position: calc(100% + 100px) top;
+    background-position: -113px 50px;
+     background-size: auto;
+    // opacity: 0.5; /* если нужен полупрозрачный фон */
+    // z-index: -1; /* помещаем фон под содержимое блока */
   }
 }
 
-@media only screen and (min-width: 1500px) {
-  .main-characters-section {
-  background-image: none;
-  }
+// @media only screen and (min-width: 1500px) {
+//   .main-characters-section {
+//   background-image: none;
+//   }
   
-}
+// }
+
+
+
 
 
 

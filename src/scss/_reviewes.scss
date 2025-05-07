@@ -1,9 +1,68 @@
 .reviewes-section {
   padding-top: 57px;
-  background-image: url('../img/reviewes/reviewes-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
+  // background-image: url('../img/reviewes/reviewes-flashlight-mob.png');
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  position: relative;
 }
+
+//Mob
+.reviewes-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/reviewes/reviewes-flashlight-mob.png') ;
+  background-position: center top;
+  background-repeat: no-repeat;  
+  width: 100vw;
+  background-position: calc(100% + 70px) -15px;
+  // background-position: -60px -47px;
+   background-size: auto 150px;
+  // opacity: 0.5; /* если нужен полупрозрачный фон */
+  // z-index: -1; /* помещаем фон под содержимое блока */
+}
+
+@media only screen and (min-width: 655px) {
+  .reviewes-section::before {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .reviewes-section {
+
+// background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
+// background-position: center top;
+// background-repeat: no-repeat;
+
+// background-position: -113px 50px;
+// background-size: auto;
+  }
+
+//Desk
+.reviewes-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/reviewes/reviewes-flashlight-desk.png') ;
+    background-position: center top;
+    background-repeat: no-repeat;  
+    width: 100vw;
+    background-position: calc(100% + 70px) 50px;
+    // background-position: -113px 50px;
+     background-size: auto;
+    // opacity: 0.5; /* если нужен полупрозрачный фон */
+    // z-index: -1; /* помещаем фон под содержимое блока */
+  }
+}
+
+// @media only screen and (min-width: 1500px) {
+//   .reviewes-section {
+//   background-image: none;
+//   }
+  
+// }
+
 
 .reviewes-container {
   max-width: 320px;
@@ -98,9 +157,9 @@
 @media only screen and (min-width: 1200px) {
   .reviewes-section {
     padding-top: 235px;
-    background-image: url('../img/reviewes/reviewes-flashlight-desk.png');
-    background-position: center top;
-    background-repeat: no-repeat;
+    // background-image: url('../img/reviewes/reviewes-flashlight-desk.png');
+    // background-position: center top;
+    // background-repeat: no-repeat;
   }
 
   .reviewes-container {
