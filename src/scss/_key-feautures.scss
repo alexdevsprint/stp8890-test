@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .key-features-list {
@@ -33,7 +33,8 @@
 
 
 .key-features-list li:nth-child(1)::after, 
-.key-features-list li:nth-child(5)::after {
+.key-features-list li:nth-child(5)::after,
+.key-features-list li:nth-child(7)::after {
     content: '';
     position: absolute;
     left: 0px;
@@ -63,9 +64,9 @@
     background-position: center bottom;    
 
   }
-
-  .key-features-list li:nth-child(3)::after, 
-  .key-features-list li:nth-child(7)::after{
+//7 удалить
+  .key-features-list li:nth-child(3)::after 
+  {
     content: '';
     position: absolute;
     left: 0px;
