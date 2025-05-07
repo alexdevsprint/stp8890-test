@@ -6,6 +6,17 @@
   // border: 1px solid red;
 }
 
+.key-features-title {
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: left;
+  color: #000;
+  margin-bottom: 80px;
+  -webkit-text-stroke: 0.4px white;
+}
+
 .key-features-list {
     display: flex;
     flex-direction: column;
