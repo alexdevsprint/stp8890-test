@@ -138,8 +138,15 @@
 
     background-image: url('../img/key-features/key-features-main-photo.png');
     background-repeat: no-repeat;
-    background-position: 400px 124px;
+    background-position: 400px 324px;
     background-size: 400px 400px;
+  }
+
+  .key-features-title {
+    margin-bottom: 280px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 0.44;
   }
 
   .key-features-list li:nth-child(odd) {
